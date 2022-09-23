@@ -16,3 +16,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Introduction
+
+Throughout the whole history of humanity, sound has played a major role in daily life. People from all cultures and epochs have been intrigued by the nature of sound, and have tried to find ways to reproduce and experiment with it by means of music. However, every single time people have perceived a sound, they have done so standing on Earth. This begs the question: how would our daily sounds be perceived on other planets? Current technologies allow us to manipulate and control sound like never before, opening up a whole range of possibilities. This project seeks build a program that can emulate the environmental characteristics of other planets and simulate how would sounds be modified under these conditions, allowing users to input any audio file and travel to other planets by listening to the modified sound produced by the software.
