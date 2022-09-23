@@ -1,4 +1,12 @@
-# space-vibrations
+# Space Vibrations
+
+National Autonomous University of Mexico (https://www.unam.mx/).
+
+- Lucrecia Beltz ([Lucreciabeltz](https://github.com/Lucreciabeltz))
+- Karime Ochoa Jacinto ([Kadkam8a](https://github.com/Kadkam8a))
+- Debora Joselyn Tolentino Diaz ([Debytd](https://github.com/Debytd))
+- Anton Pashkov ([anton-pashkov](https://github.com/anton-pashkov))
+
 ## License
 
 Copyright © 2022 <pashkov@comunidad.unam.mx, karime8aj@gmail.com, deborajtd.12@gmail.com>
