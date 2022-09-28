@@ -2,10 +2,10 @@
 
 National Autonomous University of Mexico (https://www.unam.mx/).
 
-- Lucrecia Beltz ([Lucreciabeltz](https://github.com/Lucreciabeltz))
+- Maria Lucrecia Beltz Gonzalez ([Lucreciabeltz](https://github.com/Lucreciabeltz))
 - Karime Ochoa Jacinto ([Kadkam8a](https://github.com/Kadkam8a))
 - Debora Joselyn Tolentino Diaz ([Debytd](https://github.com/Debytd))
-- Anton Pashkov ([anton-pashkov](https://github.com/anton-pashkov))
+- Anton Pashkov ([aapashkov](https://github.com/aapashkov))
 
 ## License
 
@@ -20,3 +20,14 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Introduction
 
 Throughout the whole history of humanity, sound has played a major role in daily life. People from all cultures and epochs have been intrigued by the nature of sound, and have tried to find ways to reproduce and experiment with it by means of music. However, every single time people have perceived a sound, they have done so standing on Earth. This begs the question: how would our daily sounds be perceived on other planets? Current technologies allow us to manipulate and control sound like never before, opening up a whole range of possibilities. This project seeks build a program that can emulate the environmental characteristics of other planets and simulate how would sounds be modified under these conditions, allowing users to input any audio file and travel to other planets by listening to the modified sound produced by the software.
+
+## Hypothesis
+
+The environmental conditions of other planets' atmospheres will notoriously modify the way we perceive every day sounds.
+
+## Objectives
+
+- Understand the nature of sound waves, wave filtering, and Fourier transforms.
+- Create a parameterized formula that, given any set of imposed conditions, will model the way sound waves travel through the atmosphere.
+- Build a program that implements the formula created from the previous objective.
+- Run the program on *Winter* Concerto from Antonio Vivaldi's *The Four Seasons* under the atmospheric conditions of Venus.
