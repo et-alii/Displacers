@@ -1,4 +1,4 @@
-# Space Vibrations
+# Displacers
 
 National Autonomous University of Mexico (https://www.unam.mx/).
 
