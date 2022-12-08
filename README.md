@@ -19,15 +19,38 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## Introduction
 
-Throughout the whole history of humanity, sound has played a major role in daily life. People from all cultures and epochs have been intrigued by the nature of sound, and have tried to find ways to reproduce and experiment with it by means of music. However, every single time people have perceived a sound, they have done so standing on Earth. This begs the question: how would our daily sounds be perceived on other planets? Current technologies allow us to manipulate and control sound like never before, opening up a whole range of possibilities. This project seeks build a program that can emulate the environmental characteristics of other planets and simulate how would sounds be modified under these conditions, allowing users to input any audio file and travel to other planets by listening to the modified sound produced by the software.
+
+# Acceleration function
+We know that the formula to calculate acceleration is a = F/m , however, by having the object on an inclined surface, its weight is divided into 2 forces: one on the X axis and another on the Y axis.
+The angle of inclination of the surface is the same angle formed between the force in the Y axis and the weight of the object, therefore if we move the vector of the force in X in a parallel way, we will have the necessary trigonometry to obtain the forces:
+![Image](https://user-images.githubusercontent.com/60940990/206359851-b574ad10-6b31-4708-b05f-0421e5084f1c.gif)Fx = P * sen 𝛳 
+Fy = P * cos 𝛳, if we substitute the weight for: P = m * g: Fx = m * g * sen 𝛳 y  Fy = m * g * cos 𝛳
+
+In addition to the previous decomposition there is a force that arises from Fy that exists due to friction with the surface, called friction force (Ff). The movement will depend on this force, because if Ff is greater than the angle of inclination of the surface (𝛳), the object will remain at rest; likewise, if Ff is less than 𝛳, then the body will descend with a uniformly accelerated motion.
+
+The maximum value that Ff can have is given by μt = Ff/Fy, where solving for Ff we have that Ff = μt * Fy = μt * m * g * cos 𝛳, therefore, if we want there to be movement we look for Fx = Ff .
+
+Substituting Fx and Ff we have:
+m * g * sin 𝛳 = μt * m * g * cos 𝛳, simplifying the equation: sin 𝛳 = μt * cos 𝛳.
+
+The trig ratio relating sin 𝛳 and cos 𝛳 is tan 𝛳, therefore:
+μt = tan 𝛳 and 𝛳 = arctan μt
+
+The resultant force of the two forces acting on the object is:
+FR = m * g * sin 𝛳 – μt * m * g * cos 𝛳 = m * g * (sin 𝛳 – μt * cos 𝛳)
+
+Finally, the fundamental principle of dynamics is applied: 
+a = F/m
+a = m * g * (sin 𝛳 – μt * cos 𝛳) / m
+Simplify and we have:
+a = g * (sin 𝛳 – μt * cos 𝛳)
+
+
+
 
 ## Hypothesis
 
-The environmental conditions of other planets' atmospheres will notoriously modify the way we perceive every day sounds.
+
 
 ## Objectives
 
-- Understand the nature of sound waves, wave filtering, and Fourier transforms.
-- Create a parameterized formula that, given any set of imposed conditions, will model the way sound waves travel through the atmosphere.
-- Build a program that implements the formula created from the previous objective.
-- Run the program on *Winter* Concerto from Antonio Vivaldi's *The Four Seasons* under the atmospheric conditions of Venus.
