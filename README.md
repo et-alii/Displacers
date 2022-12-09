@@ -34,19 +34,27 @@ In addition to the previous decomposition there is a force that arises from $Fy$
 The maximum value that $Ff$ can have is given by $μt = Ff/Fy$, where solving for $Ff$ we have that $Ff = μt * Fy = μt * m * g * cos𝛳$, therefore, if we want there to be movement we look for $Fx = Ff$ .
 
 Substituting $Fx$ and $Ff$ we have:
-$m * g * sin𝛳 = μt * m * g * cos𝛳$, simplifying the equation: $sin𝛳 = μt * cos𝛳$.
+
+$m * g * sin𝛳 = μt * m * g * cos𝛳$, simplifying the equation:
+
+$sin𝛳 = μt * cos𝛳$.
 
 The trig ratio relating $sin𝛳$ and $cos𝛳$ is $tan𝛳$, therefore:
+
 $μt = tan𝛳$ and $𝛳 = arctan μt$
 
 The resultant force of the two forces acting on the object is:
+
 $FR = m * g * sin𝛳 – μt * m * g * cos𝛳 = m * g * (sin𝛳 – μt * cos𝛳)$
 
 Finally, the fundamental principle of dynamics is applied: 
+
 $a = F/m$
+
 $a = m * g * (sin𝛳 – μt * cos𝛳) / m$
 
 Simplify and we have:
+
 $a = g * (sin𝛳 – μt * cos𝛳)$
 
 
