@@ -95,8 +95,9 @@ def read(input_arguments: list[str]) -> tuple[dict]:
     model_config = vars(parser.parse_args(input_arguments[1:]))
 
     # Load image
-    img = (image.imread(model_config["terrain"], "png") * 255)[:, :, :3]
-    img = img.mean(axis=2)
+    img = (image.imread(model_config["terrain"], "png") * 255)
+    if len(img.shape) > 2:
+        img = img[:, :, :3].mean(axis=2)
     model_config["terrain"] = img
 
     # Split dictionaries
