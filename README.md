@@ -89,6 +89,11 @@ $\theta = \arctan \frac{\Sigma i d - (\Sigma i \Sigma d) \div n}{\Sigma i i  -  
 
 Where $i$ is the independent variable and $d$ the dependent one. 
 
+#### Submatrix
+
+Seeks to determine the region in which the point is located, so from a given matrix, a coordinate and a radius, it returns a submatrix, with the coordinate as center and with the quantity of the radius of numbers in all cardinal directions from it, if it's posible, else the submatrix could be trimmed.
+The function inspects if the given coordinate is not close to some border, so the numbers around are enough to accomplish with the radius. If it's the case, our submatrix get trimmed using as limit the border of the matrix.
+
 ### Repository description
 >
 >model.py contains the implementation of the mathematical model.
