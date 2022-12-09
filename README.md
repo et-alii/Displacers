@@ -20,6 +20,23 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Introduction
 
 
+This project consists of a mathematical model of the movement of a sphere on an irregular surface in order to output a graphical, bidimensional visualization of how its trajectory would look from a given point.
+
+For it, the main function requires from the user two basic parameters:
+- The terrain over which the displacer will move. 
+- The coordinates (px, py) of the initial position of the displacer.
+
+Other specifications as the initial speed, gravitational acceleration value, coefficient of friction, etc. can optionally be modified by the user. 
+
+The obtained visualization will show the user the sphere movements in the axis x, and y by left-right and up-down movements, and the movements over the z-axis will be represented by the color of the pixel in the provided image where a value of 0 will represent the lowest point in the terrain and the value 255 the highest.  
+
+<img src=https://github.com/et-alii/Displacers/blob/main/examples/irregular.png>
+
+## Objetives
+
+- Generate a model of the movement of a sphere on an irregular surface.
+- Create a graphical visualization of the model from the provided parameters.
+
 ## Acceleration function
 We know that the formula to calculate acceleration is $a = F/m$, however, by having the object on an inclined surface, its weight is divided into 2 forces: one on the $X$ axis and another on the $Y$ axis.
 The angle of inclination of the surface is the same angle formed between the force in the $Y$ axis and the weight of the object, therefore if we move the vector of the force in $X$ in a parallel way, we will have the necessary trigonometry to obtain the forces:
