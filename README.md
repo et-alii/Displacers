@@ -36,8 +36,11 @@ The obtained visualization will show the user the sphere movements in the axis x
 
 - Generate a model of the movement of a sphere on an irregular surface.
 - Create a graphical visualization of the model from the provided parameters.
+## Metodology
+### Mathematical Formulas
+For the calculations two formulas were required.
 
-## Acceleration function
+#### Acceleration function
 We know that the formula to calculate acceleration is $a = F/m$, however, by having the object on an inclined surface, its weight is divided into 2 forces: one on the $X$ axis and another on the $Y$ axis.
 The angle of inclination of the surface is the same angle formed between the force in the $Y$ axis and the weight of the object, therefore if we move the vector of the force in $X$ in a parallel way, we will have the necessary trigonometry to obtain the forces:
 ![Image](https://user-images.githubusercontent.com/60940990/206359851-b574ad10-6b31-4708-b05f-0421e5084f1c.gif)
@@ -74,10 +77,18 @@ Simplify and we have:
 
 $a = g * (sin𝛳 – μ * cos𝛳)$
 
+#### Matrix angles
 
+Performs a three-dimensional linear regression on a matrix, it uses matrix horizontal indices scaled by $hscale$ as values for $x$, vertical indices scaled by $hscale$ as values for $y$ and matrix values scaled by $vscale$ as values for $z$, setting $z$  as the dependent variable and $x, y$ as independent variables.  It computes the slope of $x$ against $z$ and the slope of $y$ against $z$, and returns the inverse tangents of both slopes to obtain corresponding angles.
 
+The values $hscale$ and $vscale$ represent the appropriate scale for the entered terrain.
 
-## Hypothesis
+In order to obtain the angles the next formula was applied in the linear regression.
+
+$\theta = \arctan \frac{\Sigma i d - (\Sigma i \Sigma d) \div n}{\Sigma i i  -  (\Sigma i \Sigma i)\div n}$ 
+
+Where $i$ is the independent variable and $d$ the dependent one. 
+
 
 
 
