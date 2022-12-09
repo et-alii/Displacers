@@ -31,31 +31,31 @@ $Fx = m * g * sin𝛳$ y  $Fy = m * g * cos𝛳$
 
 In addition to the previous decomposition there is a force that arises from $Fy$ that exists due to friction with the surface, called friction force $(Ff)$. The movement will depend on this force, because if $Ff$ is greater than the angle of inclination of the surface $(𝛳)$, the object will remain at rest; likewise, if $Ff$ is less than $𝛳$, then the body will descend with a uniformly accelerated motion.
 
-The maximum value that $Ff$ can have is given by $μt = Ff/Fy$, where solving for $Ff$ we have that $Ff = μt * Fy = μt * m * g * cos𝛳$, therefore, if we want there to be movement we look for $Fx = Ff$ .
+The maximum value that $Ff$ can have is given by $μ = Ff/Fy$, where solving for $Ff$ we have that $Ff = μ * Fy = μ * m * g * cos𝛳$, therefore, if we want there to be movement we look for $Fx = Ff$ .
 
 Substituting $Fx$ and $Ff$ we have:
 
-$m * g * sin𝛳 = μt * m * g * cos𝛳$, simplifying the equation:
+$m * g * sin𝛳 = μ * m * g * cos𝛳$, simplifying the equation:
 
-$sin𝛳 = μt * cos𝛳$.
+$sin𝛳 = μ * cos𝛳$.
 
 The trig ratio relating $sin𝛳$ and $cos𝛳$ is $tan𝛳$, therefore:
 
-$μt = tan𝛳$ and $𝛳 = arctan μt$
+$μ = tan𝛳$ and $𝛳 = arctan μ$
 
 The resultant force of the two forces acting on the object is:
 
-$FR = m * g * sin𝛳 – μt * m * g * cos𝛳 = m * g * (sin𝛳 – μt * cos𝛳)$
+$FR = m * g * sin𝛳 – μ * m * g * cos𝛳 = m * g * (sin𝛳 – μ * cos𝛳)$
 
 Finally, the fundamental principle of dynamics is applied: 
 
 $a = F/m$
 
-$a = m * g * (sin𝛳 – μt * cos𝛳) / m$
+$a = m * g * (sin𝛳 – μ * cos𝛳) / m$
 
 Simplify and we have:
 
-$a = g * (sin𝛳 – μt * cos𝛳)$
+$a = g * (sin𝛳 – μ * cos𝛳)$
 
 
 
