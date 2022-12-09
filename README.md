@@ -32,7 +32,7 @@ The obtained visualization will show the user the sphere movements in the axis x
 
 <img src=https://github.com/et-alii/Displacers/blob/main/examples/irregular.png>
 
-## Objetives
+## Objectives
 
 - Generate a model of the movement of a sphere on an irregular surface.
 - Create a graphical visualization of the model from the provided parameters.
@@ -167,9 +167,18 @@ produced the animation `tube.gif`
 
  <img src=https://github.com/et-alii/Displacers/blob/main/examples/tube.gif>
  
+ ## Execution requirements
+ 1. The user must download with pip the dependencies of the `requirements.txt` file.
+ 2. Download ffmpeg as that is how the animations are created.
+ 3. Type 
+```python
+python3 `main.py` 
+```
+in the console to bring up a help interface.
+ 
  ## Used tools 
  - [Numpy](https://numpy.org/)
- - [Python 3](https://www.python.org/).
- - [Matplotlib](https://matplotlib.org/stable/index.html).
- - [FFmpeg](https://ffmpeg.org/).
+ - [Python 3](https://www.python.org/)
+ - [Matplotlib](https://matplotlib.org/stable/index.html)
+ - [FFmpeg](https://ffmpeg.org/)
  
