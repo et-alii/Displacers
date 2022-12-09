@@ -89,8 +89,87 @@ $\theta = \arctan \frac{\Sigma i d - (\Sigma i \Sigma d) \div n}{\Sigma i i  -  
 
 Where $i$ is the independent variable and $d$ the dependent one. 
 
+### Repository description
+>
+>model.py contains the implementation of the mathematical model.
+>
+>interface.py builds the command line interface with the help.
+>
+>animator.py builds the animations.
+>
+>main.py is the file that the user will run from the terminal.
+>
+### Computational implementation
 
+For the implementation of this project six functions were created:
 
+- `ss`: Returns the sum of cross products of two equal-lenght arrays `a` and `b`.
+- `submatrix`: Given an input `matrix`, returns a submatrix of size 2`r`+1 by 2`r`+1
+    with center in (`cx`, `cy`). If it is not possible to form a submatrix from
+    the given conditions (e.g. when `cx` and/or `cy` are close to the borders),
+    a trimmed matrix is returned.
+- `matrix_angles`: Performs a three-dimensional linear regression on an input `matrix`. In
+    particular, it uses matrix horizontal indices scaled by `hscale` as values
+    for x, vertical indices scaled by `hscale` as values for y, and matrix
+    values scaled by `vscale` as values for z, setting z as the dependent
+    variable and x, y as independent variables. It computes the slope of x
+    against z, and the slope of y against z, and returns the inverse tangents of
+    both slopes to obtain corresponding angles.
+- `acelerations`: Given a three-dimensional inclination, return the acceleration (in x and y)
+    produced by the force of gravity. If no custom gravity is specified, the
+    function will use Earth's Standard Gravity. You can also set a coefficient
+    of friction, which by default is 0.
+- `next_state`: Returns the new position and velocity of the displacer in the x and y
+    components given a previous state as well as the accelerations calculated
+    with the `accelerations` function.
+- `iterate`: Main function of the displacer simulation. The only required arguments are:
+    the `terrain` over which the displacer will move, and the coordinates (`px`
+    and `py`) of the initial position of the displacer. By default, the function
+    returns a list of dictionaries with the states on every iteration, unless
+    the `return_all` parameter is set to `False`. The dictionaries produced by
+    this functions contain four keys, `px`, `py`, `vx` and `vy`, corresponding
+    to the location and speed of the displacer at any given moment.
+    
+ ## Results
+ - The image `irregular.png` 
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/irregular.png>
+    and the command 
+ 
+ ```python
+ ./main.py --terrain examples/irregular.png --px 90 --py 150 --hscale 10 --dt 0.6 --mu 0.12 --iter 500 --output examples/irregular.gif --warn
+```
 
-## Objectives
+produced the animation `irregular.gif`
 
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/irregular.gif>
+ 
+  - The image `bowl.png` 
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/bowl.png>
+    and the command 
+ 
+ ```python
+ ./main.py --terrain examples/bowl.png --px 200 --py 320 --vscale 0.4 --dt 0.5--hscale 0.5 --vx 20 --mu 0.15 --radius 7 --iter 250 --output examples/bowl.gif --warn
+```
+
+produced the animation `bowl.gif`
+
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/bowl.gif>
+
+  - The image `tube.png` 
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/tube.png>
+    and the command 
+ 
+ ```python
+./main.py --terrain examples/tube.png --px 20 --py 100 --vscale 0.2 --dt 0.2 --vy -5 --output examples/tube.gif --warn
+```
+
+produced the animation `tube.gif`
+
+ <img src=https://github.com/et-alii/Displacers/blob/main/examples/tube.gif>
+ 
+ ## Used tools 
+ - [Numpy](https://numpy.org/)
+ - [Python 3](https://www.python.org/).
+ - [Matplotlib](https://matplotlib.org/stable/index.html).
+ - [FFmpeg](https://ffmpeg.org/).
+ 
