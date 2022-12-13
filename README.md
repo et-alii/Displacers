@@ -153,7 +153,7 @@ produced the animation `irregular.gif`
     and the command 
  
  ```python
- ./main.py --terrain examples/bowl.png --px 200 --py 320 --vscale 0.4 --dt 0.5--hscale 0.5 --vx 20 --mu 0.15 --radius 7 --iter 250 --output examples/bowl.gif --warn
+ ./main.py --terrain examples/bowl.png --px 200 --py 320 --vscale 0.4 --dt 0.5 --hscale 0.5 --vx 20 --mu 0.15 --radius 7 --iter 250 --output examples/bowl.gif --warn
 ```
 
 produced the animation `bowl.gif`
@@ -173,7 +173,9 @@ produced the animation `tube.gif`
  <img src=https://github.com/et-alii/Displacers/blob/main/examples/tube.gif>
  
  ## Execution
- 
+
+This program was tested with Python 3.10.6 on a Debian-based machine; as such, it might not work on other systems.
+
 1. Make sure you have [Python](https://www.python.org/downloads/) and [FFmpeg](https://ffmpeg.org/download.html) installed on your system (preferably the latest versions) by following the instructions on the corresponding download pages.
 2. Clone this repository:
  
@@ -186,7 +188,7 @@ git clone https://github.com/et-alii/Displacers/
 ```shell
 cd Displacers
 python3 -m venv venv
-. ./venv/bin/activate   # On Windows: replace the diagonals "/" with the inverted ones "\"
+. ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -201,3 +203,9 @@ python3 main.py
  - [Python 3](https://www.python.org/)
  - [Matplotlib](https://matplotlib.org/stable/index.html)
  - [FFmpeg](https://ffmpeg.org/) 
+
+## Conclusions
+
+We publish this software in the hope that it will be useful for others. In particular, we believe this program would be useful to find zones that are susceptible to flooding, due to the fact that, as water moves across a terrain, it converges towards regions of stability, which most of the times are located in a terrain's local minima. Furthermore, our model is flexible enough to perform this kind of predictions not only in the surface of the Earth, but on other planets too.
+
+It's important to note that this software assumes that the displacer is constantly in contact with the terrain, which might be a limitation when studying some kinds of terrains, such as the ones that have sharp changes in elevation (e.g. stairs). This is a conscious decision as we are only modeling the top view of the terrain, not the three-dimensional version.
