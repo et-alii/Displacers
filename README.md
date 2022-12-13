@@ -172,18 +172,32 @@ produced the animation `tube.gif`
 
  <img src=https://github.com/et-alii/Displacers/blob/main/examples/tube.gif>
  
- ## Execution requirements
- 1. The user must download with pip the dependencies of the `requirements.txt` file.
- 2. Download ffmpeg as that is how the animations are created.
- 3. Type 
-```python
-python3 `main.py` 
-```
-in the console to bring up a help interface.
+ ## Execution
  
+1. Make sure you have [Python](https://www.python.org/downloads/) and [FFmpeg](https://ffmpeg.org/download.html) installed on your system (preferably the latest versions) by following the instructions on the corresponding download pages.
+2. Clone this repository:
+ 
+```shell
+git clone https://github.com/et-alii/Displacers/
+```
+
+3. Create a Python virtual environment, activate it, and install the dependencies from the `requirements.txt` file:
+
+```shell
+cd Displacers
+python3 -m venv venv
+. ./venv/bin/activate   # On Windows: replace the diagonals "/" with the inverted ones "\"
+pip install -r requirements.txt
+```
+
+4. You may now run the program by typing the following command, which will show a help message with available parameters:
+
+```
+python3 main.py
+```
+
  ## Used tools 
  - [Numpy](https://numpy.org/)
  - [Python 3](https://www.python.org/)
  - [Matplotlib](https://matplotlib.org/stable/index.html)
- - [FFmpeg](https://ffmpeg.org/)
- 
+ - [FFmpeg](https://ffmpeg.org/) 
